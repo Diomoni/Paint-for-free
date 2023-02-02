@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2023 by Diomoni (http://jsbin.com/xibogob/12/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+<meta name="description" content="mondrian solution">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Painting</title>
+<style id="jsbin-css">
+/*==== General styles ====*/
+
+#canvas {
+  width: 400px;
+  height: 400px;
+  background-color: ivory;
+  margin: 0 auto;
+  box-shadow: 15px 15px 10px gray;
+  display: block;
+}
+
+p {
+  line-height: 10px;
+  margin: 0 auto;
+}
+
+/*==== First row ====*/
+
+#first-row {
+  height: 190px;
+  width: 100%;
+}
+
+#first-big-rectangle {
+  height: 100%;
+  width: 100%;
+}
+
+#big-rectangle-a {
+  height: 30%;
+  width: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+#big-divider-a {
+  height: 29%;
+  width: 50%;
+}
+
+#big-rectangle-a1 {
+  height: 30%;
+  width: 50%;
+}
+
+.green {
+  background-color: green;
+}
+
+#second-big-rectangle {
+  height: 100%;
+  width: 50%;
+}
+
+#big-rectangle-b {
+  height: 89%;
+  width: 35%;
+}
+
+.right {
+  float: right;
+}
+
+#big-divider-b {
+  height: 89%;
+  width: 30%;
+}
+
+#big-rectangle-b1 {
+  height: 89%;
+  width: 35%;
+}
+
+/*==== Second row ====*/
+
+#second-row {
+  height: 50%;
+  width: 100%;
+}
+
+#third-big-rectangle {
+  height: 100%;
+  width: 100%;
+}
+
+#big-rectangle-c {
+  height: 30%;
+  width: 50%;
+}
+
+#big-divider-c {
+  height: 29%;
+  width: 50%;
+}
+
+#big-rectangle-c1 {
+  height: 30%;
+  width: 50%;
+}
+
+#fourth-big-rectangle {
+  height: 100%;
+  width: 50%;
+}
+
+#big-rectangle-d {
+  height: 89%;
+  width: 35%;
+}
+
+.right {
+  float: right;
+}
+
+#big-divider-d {
+  height: 89%;
+  width: 30%;
+}
+
+#big-rectangle-d1 {
+  height: 89%;
+  width: 35%;
+}
+</style>
+</head>
+<body>
+  <div id="canvas">
+    <div id="first-row">
+      <div id="second-big-rectangle" class="right">
+        <div><p>Italy</p></div>
+        <div id="big-rectangle-b" class="red right"></div>
+        <div id="big-divider-b" class="right"></div>
+        <div id="big-rectangle-b1" class="green right"></div>
+      </div>
+      <div id="first-big-rectangle">
+        <p>Hungary</p>
+        <div id="big-rectangle-a" class="red"></div>
+        <div id="big-divider-a"></div>
+        <div id="big-rectangle-a1" class="green"></div>
+      </div>
+    </div>
+    <div id="second-row">
+      <div id="fourth-big-rectangle" class="right">
+          <p>Mexican (missing crest)</p>
+        <div id="big-rectangle-d" class="red right"></div>
+        <div id="big-divider-d" class="right"></div>
+        <div id="big-rectangle-d1" class="green right"></div>
+      </div>
+      <div id="third-big-rectangle">
+        <p>Bulgaria</p>
+        <div id="big-rectangle-c"></div>
+        <div id="big-divider-c" class="green"></div>
+        <div id="big-rectangle-c1" class="red"></div>
+      </div>
+    </div>    
+  </div>      
+</body>
+</html>
